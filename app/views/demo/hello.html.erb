@@ -1,0 +1,12 @@
+<h1> Hello from Hello file!</h1>
+
+<% @array.each do |n| %>
+    <%= n %><br>
+<% end %>
+
+<%= link_to('Index', {action: 'index'})%><br>
+
+ID: <%= @id %><br>
+ID: <%= params[:id] %><br>
+Page: <%= @page %><br>
+Next page: <%= @page.to_i + 1 %><br>
