@@ -1,4 +1,26 @@
 Rails.application.routes.draw do
+
+  root 'demo#index'
+
+  resources :subjects do 
+    member do #operates on a member of a resources (expects an ID)
+      get :delete  
+    end
+  end
+
+  resources :pages do 
+    member do #operates on a member of a resources (expects an ID)
+      get :delete  
+    end
+  end
+
+  resources :sections do 
+    member do #operates on a member of a resources (expects an ID)
+      get :delete  
+    end
+  end
+
+
   get 'demo/index'
   get 'demo/hello'
   get 'demo/other_hello'

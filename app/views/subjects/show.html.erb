@@ -1,0 +1,8 @@
+<% if !flash[:notice].blank? %>
+    <div class>
+        <%= flash[:notice] %>
+    </div>
+<% end %>
+<h1>Subjects#show</h1>
+<p>Find me in app/views/subjects/show.html.erb</p>
+<%= @subject.name %>

@@ -1,0 +1,10 @@
+<h1>Sections#index</h1>
+<p>Find me in app/views/sections/index.html.erb</p>
+
+<%= link_to("Add New Subject", new_section_path, :class => 'action new') %>
+<% @sections.each do |s| %>
+    <%= s.position %>
+    <%= s.name %>
+    <%= link_to("Edit", edit_subject_path(s)) %>
+    <%= link_to("Delete", delete_subject_path(s)) %>
+<% end %>
