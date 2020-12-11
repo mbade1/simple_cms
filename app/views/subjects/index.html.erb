@@ -1,9 +1,6 @@
-<% if !flash[:notice].blank? %>
-    <div class>
-        <%= flash[:notice] %>
-    </div>
-<% end %>
+<% @page_title = "All Subjects" %>
 
+<%= 30.days.from_now.to_s(:long) %>
 <h1>Subjects#index</h1>
 <p>Find me in app/views/subjects/index.html.erb</p>
 

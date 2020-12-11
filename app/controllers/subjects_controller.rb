@@ -1,4 +1,7 @@
 class SubjectsController < ApplicationController
+
+  layout 'admin'
+
   def index
     @subjects = Subject.sorted #sorted is a scope method in the model
   end
