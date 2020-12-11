@@ -2,6 +2,7 @@
     <html>
     <head>
         <title>Simple CMS: <%= @page_title || "Admin Area" %> </title>
+        <%= stylesheet_link_tag('admin', :media => 'all') %>
     </head>
     <body>
 
@@ -12,8 +13,14 @@
     <% end %>
 
     <!-- Before yield -->
+    <div id="content">
         <%= yield %>
+    </div>
     <!-- After yield -->
+
+    <div id="footer">
+
+    </div>
 
     </body>
 </html>
